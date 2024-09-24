@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="./styles.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
 
     <title>Frontend Mentor | Product preview card component</title>
@@ -25,35 +31,35 @@
       }
     </style>
   </head>
-  <body>
-    
+  <body class="cream">
     <main>
-      <figure class="product-image">
-        <img
-          width="300px"
-          height="450px"
-          alt="Chanel perfume image"
-          src="./images/image-product-desktop.jpg"
-        />
-      </figure>
+      <img
+        class="product-image"
+        width="300px"
+        height="450px"
+        alt="Chanel perfume image"
+        src="./images/image-product-desktop.jpg"
+      />
       <section class="product-listing">
-        <h3>perfume</h3>
-        <h1>Gabreielle Essence Eau Da Parfum</h1>
-        <p>
+        <h3 class="overline aurometal">perfume</h3>
+        <h1 class="display gunmetal">Gabreielle Essence Eau Da Parfum</h1>
+        <p class="body aurometal">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <h1>$149.99</h1>
-        <span>$169.99</span>
-        <button><a href="#">Add to Cart</a></button>
+        <section class="price">
+          <h1 class="display deep-aquamarine">$149.99</h1>
+          <span class="body aurometal">$169.99</span>
+        </section>
+        <button class="button-text pure-white"><a href="#">Add to Cart</a></button>
       </section>
     </main>
 
-    <footer class="attribution">
+    <footer class="attribution body aurometal">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Fortune Daniels</a>.
+      >. Coded by <a href="#" target="_blank">Fortune Daniels</a>.
     </footer>
   </body>
 </html>

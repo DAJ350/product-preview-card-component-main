@@ -1,6 +1,146 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
+.attribution {
+  display: none;
+}
+
+/* Color Styles */
+
+:root {
+  --pure-white: #fff;
+  --cream: #f2eae2;
+  --aurometal: #6c7289;
+  --deep-aquamarine: #3d8168;
+  --deep-aquamarine-hover: #1a4032;
+  --gunmetal: #1c232b;
+}
+
+.aurometal {
+  color: var(--aurometal);
+}
+
+.pure-white {
+  color: var(--pure-white);
+}
+
+.cream {
+  background-color: var(--cream);
+}
+
+.deep-aquamarine {
+  color: var(--deep-aquamarine);
+}
+
+.deep-aquamarine-hover {
+  color: var(--deep-aquamarine-hover);
+}
+
+.gunmetal {
+  color: var(--gunmetal);
+}
+/* Text Styles */
+
+.display {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.body {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.button-text {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+.overline {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "Montserrat";
+  letter-spacing: 0.3125rem;
+  font-weight: 500;
+  line-height: auto;
+}
+
+/* Card Design */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100svh;
+}
+
+main {
+  display: flex;
+  height: max-content;
+  max-width: 37.5rem;
+  background-color: var(--pure-white);
+  border-radius: 10px;
+}
+
+.product-image {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-listing {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.price {
+  display: flex;
+  column-gap: 1.1875rem;
+}
+
+.price span {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: var(--deep-aquamarine);
+  border: none;
+  border-radius: 8px;
+  height: 3rem;
+  width: 100%;
+}
+
+button a {
+  color: var(--pure-white);
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0.9375rem 3.875rem;
+  transition-property: color;
+  transition: 0.5s ease 0s;
+}
+
+button:hover {
+  transition-property: color;
+  transition: 0.35s ease 0s;
+  background-color: var(--deep-aquamarine-hover);
+}
