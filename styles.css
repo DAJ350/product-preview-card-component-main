@@ -112,9 +112,16 @@ main {
   padding: 2rem;
 }
 
+/*h1.display {
+    margin-top: 20px;
+    margin-bottom: 24px;
+}*/
+
 .price {
   display: flex;
   column-gap: 1.1875rem;
+  align-items: center;
+  /*margin: 30px 0;*/
 }
 
 .price span {
@@ -127,6 +134,10 @@ button {
   border-radius: 8px;
   height: 3rem;
   width: 100%;
+}
+
+button svg {
+    margin-right: 12px;
 }
 
 button a {
