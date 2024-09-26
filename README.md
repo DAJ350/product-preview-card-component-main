@@ -39,9 +39,6 @@ Users should be able to:
 
 It wasn't really a new learning but I was reminded that percentages are great for sizing elements relative to the width of their parent elements. Using rem/em for this doesn't feel as fluid to me that using percentages. 
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
 ## Author
 
 - Website - [Fortune - Daniels Lajorin](https://www.your-site.com)
