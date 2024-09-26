@@ -180,10 +180,11 @@ button:hover {
 
   main {
     flex-direction: column;
-    width: 92%; 
+    width: 91.466666666666667%; 
   }
 
   .product-listing {
     row-gap: clamp(0.75em, 1em, 1.25em);
+    padding: 1.5rem;
   }
 }
