@@ -43,6 +43,7 @@
 .gunmetal {
   color: var(--gunmetal);
 }
+
 /* Text Styles */
 
 .display {
@@ -80,6 +81,10 @@
 
 /* Card Design */
 
+.mobile {
+  display: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -91,8 +96,8 @@ body {
 
 main {
   display: flex;
-  height: max-content;
-  max-width: 37.5rem;
+  min-height: auto;
+  max-width: 37.5em;
   background-color: var(--pure-white);
   border-radius: 10px;
 }
@@ -137,7 +142,7 @@ button {
 }
 
 button svg {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 button a {
@@ -154,4 +159,31 @@ button:hover {
   transition-property: color;
   transition: 0.35s ease 0s;
   background-color: var(--deep-aquamarine-hover);
+}
+
+@media only screen and (max-width: 625px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  img.mobile {
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    width: 92%; 
+  }
+
+  .product-listing {
+    row-gap: clamp(0.75em, 1em, 1.25em);
+  }
 }
